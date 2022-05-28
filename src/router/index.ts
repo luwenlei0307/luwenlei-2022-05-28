@@ -11,12 +11,28 @@ const routes: Array<RouteConfig> = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/task3',
+    name: 'task3',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/task3.vue')
+  },
+  {
+    path: '/task4',
+    name: 'task4',
+    // route level code-splitting
+    // this generates a separate chunk (changeStyle.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "changeStyle" */ '../views/task4.vue')
+  },
+  {
+    path: '/task5',
+    name: 'task5',
+    // route level code-splitting
+    // this generates a separate chunk (changeStyle.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "changeStyle" */ '../views/task5.vue')
   }
 ]
 
